@@ -1,0 +1,204 @@
+/* --- Global Resets & Variables --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #111215;
+    color: #ffffff;
+    padding-bottom: 40px;
+}
+
+/* --- Navigation Bar --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #0d0e10;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span {
+    color: #ff5722;
+    /* Accent color for 'Pulse' */
+}
+
+.nav-links a {
+    color: #a0a5b0;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+/* --- Layout Container --- */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* --- Hero / Breaking Section --- */
+.hero-card {
+    background: linear-gradient(135deg, #0b1528 0%, #08295a 100%);
+    border-radius: 12px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border: 1px solid #162642;
+}
+
+.hero-content {
+    max-width: 70%;
+}
+
+.badge-breaking {
+    background-color: #ff5722;
+    color: #ffffff;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    color: #8fa0bc;
+    font-size: 1.05rem;
+}
+
+.hero-icon-container {
+    background: linear-gradient(135deg, #1c2d5a 0%, #0d1b3e 100%);
+    width: 120px;
+    height: 100px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #253b75;
+}
+
+.robot-icon {
+    font-size: 2rem;
+}
+
+/* --- Cards Grid Section --- */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #1a1c20;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    height: 220px;
+    border: 1px solid #262930;
+}
+
+/* Top half image/gradient space of cards */
+.card-image-area {
+    height: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.emoji-icon {
+    font-size: 1.8rem;
+}
+
+/* Custom Gradients for Lower Cards */
+.hardware-card .card-image-area {
+    background: linear-gradient(180deg, #1d4ed8 0%, #1e3a8a 100%);
+}
+
+.climate-card .card-image-area {
+    background: linear-gradient(180deg, #10b981 0%, #065f46 100%);
+}
+
+.research-card .card-image-area {
+    background: linear-gradient(180deg, #a855f7 0%, #5b21b6 100%);
+}
+
+/* Bottom half info space of cards */
+.card-info {
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.category-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.text-orange {
+    color: #ff5722;
+}
+
+.card-info h2 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #ffffff;
+}
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+        /* Stack lower cards on small screens */
+    }
+
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        margin: 0 10px;
+    }
+}
