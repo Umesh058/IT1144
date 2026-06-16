@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF0E4;
+    font-family: tahoma;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: rgba(137, 152, 109);
+}
+
+.hero {
+    text-align: center;
+    padding: 80px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-top: -110PX;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    margin-top: -50px;
+}
+
+
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+
+
+
+.cards {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+	margin-top:-60px;
+}
+
+.cards img:hover {
+    transition: 0.3s ease-in-out;
+    transform: scale(1.03);
+}
+
+.cards img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+
+
+
+
+.cardk {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+	margin-top:-60px;
+}
+
+.cardk img:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.03);
+}
+
+.cardk img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.mark h1 {
+    margin: 10PX -10PX;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: bold;
+}
+
+p {
+    color: rgba(137, 152, 109);
+    font-size: 20px;
+}

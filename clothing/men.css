@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF0E4;
+    font-family: tahoma;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-top: -110PX;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px;
+    margin-top: -50px;
+}
+
+.card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    border-radius: 15px;
+}
+
+.mark h1 {
+    margin: 10PX -10PX;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}

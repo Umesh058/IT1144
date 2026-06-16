@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFF0E4;
+    font-family: tahoma;
+    color: #222;
+}
+
+
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 32px;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .3s;
+}
+
+nav a:hover {
+    color: #90AB8B;
+}
+
+.login-btn a {
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 12px;
+    background: rgba(15, 15, 15, .2);
+    color: white;
+    transition: .3s;
+}
+
+.login-btn a:hover {
+    background: #90AB8B;
+}
+
+
+
+.hero {
+    width: 90%;
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 70px;
+    line-height: 1.1;
+}
+
+.hero-content span {
+    color: #90AB8B;
+}
+
+.hero-content p {
+    margin-top: 25px;
+    max-width: 500px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.hero-content button {
+    margin-top: 30px;
+    padding: 14px 28px;
+    border: none;
+    border-radius: 12px;
+    background: #90AB8B;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.hero-content button:hover {
+    transform: translateY(-3px);
+}
+
+.hero-image {
+    display: flex;
+    flex: 1;
+    gap: 50px;
+}
+
+.first {
+    margin-top: 40px;
+
+}
+
+.first {
+    margin-bottom: 10px;
+
+}
+
+.hero-image img {
+    height: 500PX;
+    width: auto;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+
+}
+
+
+
+.collection {
+    width: 90%;
+    margin: 100px auto;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.title h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 40px;
+}
+
+.products {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 18px;
+    width: 300px;
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-family: 'Cinzel', serif;
+}
+
+.card p {
+    margin-top: 10px;
+    color: #90AB8B;
+    font-weight: bold;
+}
